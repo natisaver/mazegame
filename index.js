@@ -21,8 +21,8 @@ class Maze {
       for (let c=0; c < this.columns; c++) { //4b loop for each col per row
         let cell = new Cell(r, c, this.grid, this.size); //5) create cell obj
         rowArr.push(cell) //6) push it to rowArr in loop above
-
       }
+      this.grid.push(rowArr);
     }
   }
 
